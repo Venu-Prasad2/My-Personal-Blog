@@ -14,16 +14,16 @@ const PostDetails = () => {
     if (!token) {
       navigate('/login'); // Redirect to login if no token found
     } else {
-      // If the user is authenticated, fetch the post
+      const fetchPost = async () => {
+        const res = await fetch(`http://localhost:5000/api/posts/${id}`);
+        const data = await res.json();
+        setPost(data);
+      };
       fetchPost();
     }
-  }, [navigate]);
+  }, [id]);
 
-  const fetchPost = async () => {
-    const res = await fetch(`http://localhost:5000/api/posts/${id}`);
-    const data = await res.json();
-    setPost(data);
-  };
+  
 
   if (!post) return <p>Loading...</p>;
 

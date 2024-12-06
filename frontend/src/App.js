@@ -4,20 +4,20 @@ import HomePage from './components/HomePage';
 import CreatePost from './components/CreatePost';
 import Login from './components/Login';
 import PostDetails from './components/PostDetails';
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar"
 import './App.css';
 
 function App() {
   const location = useLocation();
 
-  // Define routes where Navbar should not be displayed
+ 
   const hideNavbarRoutes = ['/login'];
 
   return (
     <>
-      {/* Conditionally render the Navbar */}
-      {!hideNavbarRoutes.includes(location.pathname) && <Navbar />}
-      <div className="container">
+      
+      {!hideNavbarRoutes.includes(location.pathname) && <Navbar />} 
+      <div className="container"> 
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/create-post" element={<CreatePost />} />

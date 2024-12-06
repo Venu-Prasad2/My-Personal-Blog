@@ -48,7 +48,7 @@ const CreatePost = () => {
 
   return (
     <>
-      <marquee style={{ color: 'red', fontSize: '20px' }}>"  Create Some Amazing Post..  "</marquee>
+      
       <div className="create-post-container">
         <form className="create-post-form" onSubmit={handleSubmit}>
           <h2 className="create-post-title">Create a New Post</h2>
