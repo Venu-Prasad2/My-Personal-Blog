@@ -24,6 +24,12 @@
   margin-top: 10px;
   font-family: 'Open Sans', sans-serif
 }
+.loader-container{
+  display-flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
 .back-button {
   display: flex;
   align-items: center;
