@@ -18,7 +18,7 @@ const HomePage = () => {
   }, [navigate]);
 
   const fetchPosts = async () => {
-    const res = await fetch('http://localhost:5000/api/posts');
+    const res = await fetch('https://my-personal-blog-takg.onrender.com/api/posts');
     const data = await res.json();
     setPosts(data);
     setLoading(false);
