@@ -28,7 +28,7 @@ const CreatePost = () => {
       return;
     }
 
-    const res = await fetch('http://localhost:5000/api/posts', {
+    const res = await fetch('https://my-personal-blog-takg.onrender.com/api/posts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
