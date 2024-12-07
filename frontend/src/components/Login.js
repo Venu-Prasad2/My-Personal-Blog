@@ -59,7 +59,7 @@ const Login = () => {
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                         className="input-field-title"
-                        placeholder="Enter Username"
+                        placeholder="Enter Username (VenuPrasad)"
                     />
                 </div>
                 <div className="input-group">
@@ -70,7 +70,7 @@ const Login = () => {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         className="input-field-title"
-                        placeholder="Enter Password"
+                        placeholder="Enter Password (VenuPrasad@123)"
                     />
                 </div>
                 {error && <div className="error-message">{error}</div>}
