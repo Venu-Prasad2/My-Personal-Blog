@@ -26,7 +26,7 @@ const PostDetails = () => {
 
   
 
-  if (!post) return <p>Loading...</p>;
+  if (!post) return <div className="loader-container"><Rings color="blue" height={100} width={100} /></div>;
 
   const handleBackClick = () => {
     navigate(-1); // Navigate back to the previous page
