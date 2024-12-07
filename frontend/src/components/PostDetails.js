@@ -15,7 +15,7 @@ const PostDetails = () => {
       navigate('/login'); // Redirect to login if no token found
     } else {
       const fetchPost = async () => {
-        const res = await fetch(`http://localhost:5000/api/posts/${id}`);
+        const res = await fetch(`https://my-personal-blog-takg.onrender.com/api/posts/${id}`);
         const data = await res.json();
         setPost(data);
       };
