@@ -6,10 +6,10 @@ The **Personal Blog Platform** is a web application where users can create, view
 
 ### Features
 
-- **Create and Manage Blogs**: Users can write, edit, and delete blog posts.
+- **Create and Manage Blogs**: Users can see all posts,createpost,singlpost. 
 - **User Authentication**: Secure login and session management.
 - **Responsive Design**: Optimized for both desktop and mobile.
-- **Hosting**: Deployed on [Render](https://render.com) for global accessibility.
+
 
 ### Live Demo
 
