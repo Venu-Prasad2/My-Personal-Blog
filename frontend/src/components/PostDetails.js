@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
+import { Rings } from 'react-loader-spinner';
 import "./PostDetails.css";
 
 const PostDetails = () => {
